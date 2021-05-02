@@ -31,8 +31,8 @@ function Search() {
       </div>
       <div style={style}>
         { filteredElements.map(el => (
-          <div style={{width: "25%", padding: "2%"}}>
-            <SearchElementCard el={el} key={el.name} />
+          <div style={{width: "25%", padding: "2%"}} key={el.name} >
+            <SearchElementCard el={el} />
           </div>
         ))}
         <div className="placeholder-card" style={style.placeHolderCard}></div>

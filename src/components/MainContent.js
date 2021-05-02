@@ -25,14 +25,14 @@ function MainContent() {
         { state.view ? 
           <Fragment >
             <div style={style.typewriter} >
-              <p id="typingText" class="typingText typingFont text-white">Search for <span class="activeName">New Elements</span></p>
+              <p id="typingText" className="typingText typingFont text-white">Search for <span className="activeName">New Elements</span></p>
             </div>
               <Search />
           </ Fragment>
           :
           <Fragment >
             <div style={style.typewriter} >
-              <p id="typingText" class="typingText typingFont text-white">Enter your <span class="activeName">Mining power</span></p>
+              <p id="typingText" className="typingText typingFont text-white">Enter your <span className="activeName">Mining power</span></p>
             </div>
               <MiningPower /> 
           </ Fragment>

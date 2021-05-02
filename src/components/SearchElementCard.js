@@ -21,16 +21,16 @@ function SearchElementCard(props) {
   const [ state ] = useContext(Context);
   return (
     <div style={style.container}>
-          <div class="">
+          <div className="">
             { props.el.src !== undefined  ?
-              <img class="element-image" style={style.img} src={props.el.src} alt={props.el.name} /> :
-              <img class="element-image" style={style.img} src="./assets/images/elements/ocean.png" alt={props.el.name} />
+              <img className="element-image" style={style.img} src={props.el.src} alt={props.el.name} /> :
+              <img className="element-image" style={style.img} src="./assets/images/elements/ocean.png" alt={props.el.name} />
             }
           </div>
-          <div class="">
+          <div className="">
               <h5>{props.name}</h5>
               <p>Current cost: ${props.el.cost * state.aetherRate}</p>
-              {/* <img class="searched-price-image" src="assets/images/aether.png" alt="Card cap" /> */}
+              {/* <img className="searched-price-image" src="assets/images/aether.png" alt="Card cap" /> */}
           </div>
       </div>
   )
